@@ -5,13 +5,18 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
     <link href="./styles.css" rel="stylesheet">
-    <title>Hello World!</title>
+    <title>App</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    
+    <nav class="vNavbar">
+      <ul class="listContainer">
+        <li class="listItem">Home</li>
+        <li class="listItem">Issues</li>
+        <li class="listItem">View</li>
+        <li class="listItem">Summary</li>
+      </ul>
+    </nav>
 
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
